@@ -10,8 +10,14 @@ async function run() {
 
     await page.goto('https://in.linkedin.com/');
 
+
+
+    // waiting for desired selector
+    await page.waitForSelector('.top-nav-menu');
+
     // selecting jobs tab and navigating to that page
     await page.click('xpath//html/body/nav/ul/li[4]/a')
+    
 
     
     console.log('helloooo');
