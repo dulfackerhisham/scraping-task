@@ -7,7 +7,7 @@ async function run() {
         headless: false,
         defaultViewport: false,
         args: ['--start-maximized' ],
-        useDataDir: './tmp'
+        userDataDir: './tmp'
     });
     const page = await browser.newPage();
 
